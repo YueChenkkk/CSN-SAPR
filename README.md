@@ -1,5 +1,5 @@
 # Introduction
-  This is the source code of the paper *A Neural-network-based Approach to Identifying Speakers in Novels* presented on Interspeech 2021. It demonstrates the method to detect the speaker of the utterances in the novel given a fix range of contexts.
+  This is the source code of the paper *A Neural-network-based Approach to Identifying Speakers in Novels* presented on Interspeech 2021. It demonstrates the method to detect the speakers of the utterances in the novel given a fix range of contexts.
 
 # Usage
   Training: sh run_train.sh  
