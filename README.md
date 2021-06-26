@@ -1,5 +1,5 @@
 # Introduction
-  This is the source code of the paper *A Neural-network-based Approach to Identifying Speakers in Novels* presented on Interspeech 2021. It demonstrates the method to detect the speakers of the utterances in the novel given a fix range of contexts. The dataset on https://github.com/YueChenkkk/Chinese-Dataset-Speaker-Identification is included in ./data directory.
+  This is the source code of the paper *A Neural-network-based Approach to Identifying Speakers in Novels* presented on Interspeech 2021. It demonstrates the method to detect the speakers of the utterances in the novel given a fix range of contexts. Speaker-alternation-based revision is implemented in the evaluation script. The dataset on https://github.com/YueChenkkk/Chinese-Dataset-Speaker-Identification is included in ./data directory.
 
 # Usage
   Training: sh run_train.sh  
