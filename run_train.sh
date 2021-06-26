@@ -5,7 +5,7 @@ DATA_PREFIX="./data"
 
 source ${ROOT_DIR}/.bashrc
 
-CUDA_VISIBLE_DEVICES=2 python train.py \
+CUDA_VISIBLE_DEVICES=0 python train.py \
 --model_name CSN \
 --pooling_type max_pooling \
 --dropout 0.5 \
