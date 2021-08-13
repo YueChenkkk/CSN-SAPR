@@ -129,7 +129,7 @@ def evaluate(checkpoint_dir, eval_file_path):
     fout = open(os.path.join(checkpoint_dir, 'csn_sapr_on_test.txt'), 'w', encoding='utf-8')
     for idx, (pred, pred_spk, rev_spk, cdd_ids, cdd_aliases, gt, ic) in \
         enumerate(zip(pred_list, pred_speakers, revised_speakers, candidate_ids_list, candidate_aliases_list, ground_truth, inst_categores)):
-        fout.write('Raw instance (%s):\n'.format(ic))
+        fout.write('Raw instance (%s):\n' % (ic))
         for i, sent in enumerate(pred.seg_sents):
             postfix = '\t------QUOTE\n' if i == 10 else '\n'
             fout.write(''.join(sent) + postfix)
