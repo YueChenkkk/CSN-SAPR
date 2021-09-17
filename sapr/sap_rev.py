@@ -176,15 +176,15 @@ def sap_rev(pred_list, alias2id, th):
 		left_pred_spk, left_cfd = pred_cfd(left_pred, speakers)
 		right_pred_spk, right_cfd = pred_cfd(right_pred, speakers)
 
-		for seg_sent in left_pred.seg_sents:
-			print(''.join(seg_sent))
-		print('Left pred:', id2alias[left_pred_spk], 'Cfd:', left_cfd)
-		print('---SEP---')
-		for seg_sent in right_pred.seg_sents:
-			print(''.join(seg_sent))
-		print('Right pred:', id2alias[right_pred_spk], 'Cfd:', right_cfd)
-		print([id2alias[x] for x in speakers])
-		print('----------------------------------------------')
+# 		for seg_sent in left_pred.seg_sents:
+# 			print(''.join(seg_sent))
+# 		print('Left pred:', id2alias[left_pred_spk], 'Cfd:', left_cfd)
+# 		print('---SEP---')
+# 		for seg_sent in right_pred.seg_sents:
+# 			print(''.join(seg_sent))
+# 		print('Right pred:', id2alias[right_pred_spk], 'Cfd:', right_cfd)
+# 		print([id2alias[x] for x in speakers])
+# 		print('----------------------------------------------')
 
 		side = 'left' if left_cfd > right_cfd else 'right'
 		spk_id = left_pred_spk if left_cfd > right_cfd else right_pred_spk
